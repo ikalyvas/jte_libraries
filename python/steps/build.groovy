@@ -1,10 +1,10 @@
 void call(){
-
-  node('built-in'){
-    sh(script:"ls -ltr")
-    echo "Hello from build.groovy"
-	
-}
+	stage("Building Python app"){
+  	   node('built-in'){
+             sh(script:"ls -ltr")
+             echo "Hello from build.groovy"
+	   }
+     }
 
 
 }
